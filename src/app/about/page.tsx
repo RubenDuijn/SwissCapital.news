@@ -33,7 +33,7 @@ export default function AboutPage() {
           Our essays are grounded in public filings, policy documents, official data, central bank material, company disclosures, and institutional research. The aim is not academic citation density, but sufficient sourcing and named evidence to make analytical claims inspectable.
         </p>
         <p>
-          We publish selectively. Archive depth matters more than publishing cadence. It is better to release a small number of durable strategic essays than to simulate momentum through generic volume.
+          SwissCapital.news publishes with an emphasis on durable analysis, archival relevance, and editorial clarity. The publication prioritizes structural insight over reactive commentary and approaches coverage as a long-horizon examination of capital, technology, and global systems.
         </p>
       </section>
 
