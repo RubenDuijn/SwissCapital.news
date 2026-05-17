@@ -24,7 +24,7 @@ export default function AboutPage() {
           We believe high-quality analysis should be concise, transparent in assumptions, and legible across disciplines. Financial context, policy architecture, and technical infrastructure are treated as a connected system rather than isolated beats.
         </p>
         <p>
-          SwissCapital.news is newsletter-first by design. The weekly briefing distills complex developments into clear implications for investors, operators, and policymakers.
+          SwissCapital.news is a publication. The weekly briefing is distribution infrastructure for readers who want direct access to our analysis cadence.
         </p>
       </section>
 
