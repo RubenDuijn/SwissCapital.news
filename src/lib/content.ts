@@ -7,6 +7,8 @@ export type Topic =
   | "Energy"
   | "Biotechnology";
 
+export type ArticleFormat = "Signal Brief" | "Analytical Essay" | "Strategic Deep Dive";
+
 export type Reference = {
   title: string;
   source: string;
@@ -22,6 +24,7 @@ export type Article = {
   authorNote: string;
   publishedAt: string;
   readTime: string;
+  format: ArticleFormat;
   imageAlt: string;
   body: string[];
   pullQuote: string;
@@ -47,6 +50,7 @@ export const featuredArticle: Article = {
   authorNote: "Institutional research desk",
   publishedAt: "May 17, 2026",
   readTime: "16 min read",
+  format: "Strategic Deep Dive",
   imageAlt: "A minimalist skyline with compute campuses and transmission lines",
   pullQuote:
     "When compute becomes strategic infrastructure, valuation is no longer only about growth; it is about control over the system that allocates future productivity.",
@@ -133,6 +137,7 @@ export const latestAnalysis: Article[] = [
     authorNote: "Policy and systems desk",
     publishedAt: "May 10, 2026",
     readTime: "11 min read",
+    format: "Analytical Essay",
     imageAlt: "Industrial corridor with fabrication facilities and freight rail",
     pullQuote:
       "Industrial policy is no longer exceptional intervention; it is becoming the baseline operating condition for strategic markets.",
@@ -159,6 +164,7 @@ export const latestAnalysis: Article[] = [
     authorNote: "Institutions and risk coverage",
     publishedAt: "May 3, 2026",
     readTime: "10 min read",
+    format: "Analytical Essay",
     imageAlt: "Institutional architecture in monochrome with strong geometric lines",
     pullQuote:
       "In uncertain systems, trust functions as collateral: it lowers transaction friction and expands the feasible horizon of capital.",
@@ -184,6 +190,7 @@ export const latestAnalysis: Article[] = [
     authorNote: "Political economy and incentives",
     publishedAt: "April 28, 2026",
     readTime: "11 min read",
+    format: "Analytical Essay",
     imageAlt: "Parliament district and financial center connected by transport network",
     pullQuote: "Policy language explains intent; incentive architecture reveals destination.",
     body: [
@@ -208,6 +215,7 @@ export const latestAnalysis: Article[] = [
     authorNote: "Capital allocation and infrastructure coverage",
     publishedAt: "April 21, 2026",
     readTime: "12 min read",
+    format: "Analytical Essay",
     imageAlt: "Global map abstraction linking ports, grids, and industrial clusters",
     pullQuote:
       "Strategic capital no longer seeks only growth; it seeks jurisdictions where infrastructure, incentives, and institutions align.",
