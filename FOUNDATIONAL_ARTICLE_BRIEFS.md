@@ -62,3 +62,12 @@ If a piece does not add structural insight, do not publish it.
 
 ## Revision Rule
 When upgrading an existing anchor article, do not just elaborate. Increase specificity, expose the binding constraint, and tighten every paragraph around mechanism.
+
+## Editorial Signature
+Use Spine Sentences as a recurring SwissCapital signature in anchor pieces.
+
+Definition:
+- one or two sentences that encode the core mechanism driving the article's thesis
+
+Usage target:
+- 2-4 per flagship article (opening, middle, conclusion)

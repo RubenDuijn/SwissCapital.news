@@ -122,6 +122,21 @@ Default principle:
 - constraint over theme
 - mechanism over outcome
 
+## Editorial Signature Convention: Spine Sentence
+
+Spine Sentence is a formal SwissCapital device for flagship analysis.
+
+Definition:
+- a concise structural statement that explains the central mechanism of the article
+
+Requirements:
+- use 2-4 Spine Sentences in Strategic Deep Dive pieces
+- place across opening, mid-analysis, and conclusion
+- each Spine Sentence must be specific enough that it cannot be reused unchanged for unrelated topics
+
+Failure mode:
+- if the Spine Sentence sounds like broad commentary, revise for mechanism and constraint specificity.
+
 ## Anti-Patterns (Never Do)
 
 - ✗ Invent individual analyst personas with fake credentials

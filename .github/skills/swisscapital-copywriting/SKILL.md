@@ -175,3 +175,19 @@ Before publishing a revised article, ask:
 - Which claim is now evidence-backed instead of implied?
 - Which constraint is now visible and measurable?
 - Where did generic language get removed?
+
+## Editorial Signature Convention: Spine Sentence
+
+A **Spine Sentence** is a standalone structural statement that defines the core mechanism of the article.
+
+Rules:
+- precise, non-generic, and system-level
+- captures the article thesis in one or two sentences
+- reusable as the article's defining intellectual anchor
+- appears 2-4 times in flagship pieces (opening, middle, conclusion)
+
+Use pattern:
+- "Spine sentence: X is occurring because Y constraint binds through Z mechanism."
+
+Quality check:
+- if the Spine Sentence can fit any publication topic, it is too generic and must be rewritten.

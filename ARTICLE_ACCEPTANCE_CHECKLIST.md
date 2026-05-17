@@ -173,6 +173,18 @@ Must be true after revision:
 
 If these are not true, revise again before publishing.
 
+## Spine Sentence Gate
+
+For flagship and deep-dive pieces:
+- include 2-4 Spine Sentences
+- each must define a structural mechanism, not a thematic observation
+- at least one must connect constraints to capital-allocation consequences
+
+Revise if:
+- Spine Sentences are generic
+- Spine Sentences do not explain causality
+- Spine Sentences do not link to evidence in the article
+
 If in doubt:
 - do not publish
 - revise for depth
