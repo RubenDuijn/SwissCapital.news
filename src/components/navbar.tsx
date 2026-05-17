@@ -35,7 +35,7 @@ export function Navbar() {
             </li>
           </ul>
           <MobileMenu />
-          <ThemeToggle />
+          <ThemeToggle className="hidden md:flex" />
         </div>
       </nav>
     </header>

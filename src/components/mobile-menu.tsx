@@ -2,6 +2,7 @@
 
 import { useState, useEffect } from "react";
 import Link from "next/link";
+import { ThemeToggle } from "@/components/theme-toggle";
 
 const navItems = [
   { label: "Home", href: "/" },
@@ -66,6 +67,10 @@ export function MobileMenu() {
               </li>
             ))}
           </ul>
+          <div className="border-t border-border/50 px-5 py-3 flex items-center justify-between">
+            <span className="text-xs text-muted uppercase">Theme</span>
+            <ThemeToggle />
+          </div>
         </div>
       )}
     </>
