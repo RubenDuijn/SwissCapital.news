@@ -70,6 +70,41 @@ Length is a **consequence of analytical depth, not a production target.** Classi
 - If a section does not add insight, remove it
 - Prefer precision over verbosity
 
+## SwissCapital Editorial Quality Framework (Scoring)
+
+Score each finished draft from 1 to 10 across the seven categories below before publication.
+
+1. **Analytical Depth**
+- Does the piece explain mechanisms, incentives, and causality instead of summarizing events?
+
+2. **Structural Clarity**
+- Is the argument layered and easy to follow from thesis to implications?
+
+3. **Evidence Density**
+- Are claims anchored in named companies, policies, disclosures, institutions, or official data?
+
+4. **Systemic Insight**
+- Does the article explain second-order effects and broader system behavior?
+
+5. **Institutional Tone**
+- Does the writing read like a research publication rather than commentary or marketing?
+
+6. **Information Compression**
+- Does each paragraph add unique analytical value without filler?
+
+7. **Credibility Perception**
+- Would a professional allocator, strategist, or policy analyst take this draft seriously?
+
+### Scoring Guidance
+- **9-10:** Publication-grade and archival
+- **7-8:** Strong but reviseable
+- **5-6:** Underdeveloped; substantial revision required
+- **<5:** Reject and rebuild
+
+Publication baseline:
+- No category below 7
+- Average score should be at least 8 for flagship essays
+
 ## Anti-Patterns (Never Do)
 
 - ✗ Invent individual analyst personas with fake credentials

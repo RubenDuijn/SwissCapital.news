@@ -125,6 +125,40 @@ Revise if the structure is missing major sections.
 ## Publication-Level Rule
 Better one exceptional article than ten generic pieces.
 
+## SwissCapital Editorial Scorecard (Required)
+Score each category from 1-10 before final publish decision.
+
+1. Analytical Depth
+- Does the piece explain mechanisms and causality instead of summarizing events?
+
+2. Structural Clarity
+- Is the argument logically layered from thesis to implications?
+
+3. Evidence Density
+- Are claims anchored in named entities, policy frameworks, filings, and official data?
+
+4. Systemic Insight
+- Are second-order effects and broader system behavior explained?
+
+5. Institutional Tone
+- Does the piece read like a research publication, not commentary?
+
+6. Information Compression
+- Does each paragraph add unique analytical value without filler?
+
+7. Credibility Perception
+- Would a professional investor, strategist, or analyst take this seriously?
+
+Publish threshold:
+- no category below 7
+- average score at least 8 for Strategic Deep Dive
+
+Revise threshold:
+- any category at 5-6
+
+Reject threshold:
+- any category below 5
+
 If in doubt:
 - do not publish
 - revise for depth
