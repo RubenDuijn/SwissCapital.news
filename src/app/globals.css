@@ -1,0 +1,107 @@
+@import "tailwindcss";
+
+:root {
+  --background: #f8f8f5;
+  --panel: #ffffff;
+  --ink: #141414;
+  --muted: #595959;
+  --border: #d8d8d1;
+  --charcoal: #1f1f1f;
+}
+
+@custom-variant dark (&:where(.dark, .dark *));
+
+:root {
+  color-scheme: light;
+}
+
+@theme inline {
+  --color-background: var(--background);
+  --color-panel: var(--panel);
+  --color-ink: var(--ink);
+  --color-muted: var(--muted);
+  --color-border: var(--border);
+  --color-charcoal: var(--charcoal);
+  --font-sans: var(--font-ibm-plex-sans);
+  --font-serif: var(--font-source-serif);
+}
+
+.dark {
+  --background: #121212;
+  --panel: #181818;
+  --ink: #ecece7;
+  --muted: #b2b2ac;
+  --border: #2d2d2b;
+  --charcoal: #d7d7cf;
+  color-scheme: dark;
+}
+
+body {
+  background: var(--background);
+  color: var(--ink);
+  font-family: var(--font-ibm-plex-sans), sans-serif;
+  line-height: 1.5;
+}
+
+h1,
+h2,
+h3,
+h4 {
+  font-family: var(--font-source-serif), serif;
+}
+
+.fade-in-up {
+  animation: fadeInUp 560ms ease-out both;
+}
+
+.fade-delay-1 {
+  animation-delay: 80ms;
+}
+
+.fade-delay-2 {
+  animation-delay: 160ms;
+}
+
+.story-link {
+  position: relative;
+}
+
+.story-link::after {
+  content: "";
+  position: absolute;
+  left: 0;
+  bottom: -0.15rem;
+  width: 100%;
+  height: 1px;
+  background: currentColor;
+  transform: scaleX(0);
+  transform-origin: right;
+  transition: transform 220ms ease;
+}
+
+.story-link:hover::after {
+  transform: scaleX(1);
+  transform-origin: left;
+}
+
+.editorial-prose p {
+  margin-top: 1.2rem;
+  font-size: 1.06rem;
+  line-height: 1.95;
+  color: var(--ink);
+}
+
+.editorial-prose p:first-child {
+  margin-top: 0;
+}
+
+@keyframes fadeInUp {
+  from {
+    opacity: 0;
+    transform: translateY(12px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
