@@ -11,6 +11,9 @@ Must cover:
 - concentration mechanisms (power, chips, cloud distribution)
 - incentive alignment across states, hyperscalers, and enterprises
 - capital allocation consequences
+- second-iteration standard: add explicit friction points (GPU supply, electricity, data-center interconnect, export controls, capex cadence)
+- preferred evidence: Microsoft, OpenAI, Nvidia, Google, Amazon, Apple, TSMC, AMD, CHIPS Act, EU AI Act, sovereign wealth platforms
+- spine statements should translate AI from a software story into a capacity and control story
 
 ## 2) The Quiet Return of Industrial Policy
 Purpose:
@@ -56,3 +59,6 @@ Must cover:
 Publish slowly and selectively.
 
 If a piece does not add structural insight, do not publish it.
+
+## Revision Rule
+When upgrading an existing anchor article, do not just elaborate. Increase specificity, expose the binding constraint, and tighten every paragraph around mechanism.

@@ -105,6 +105,23 @@ Publication baseline:
 - No category below 7
 - Average score should be at least 8 for flagship essays
 
+## Second-Iteration Article Upgrade Standard
+
+When revising an existing article, the objective is not stylistic polish. The objective is higher institutional credibility, sharper causal explanation, and denser evidence.
+
+Mandatory upgrade moves:
+- Replace abstract claims with named companies, policy frameworks, or infrastructure systems
+- Explain the mechanism behind every major claim
+- Expose system friction: compute, energy, chips, regulation, capex cycles, geopolitical fragmentation
+- Add 2-3 spine statements that define the thesis in precise institutional language
+- Remove generic language that could fit any finance publication
+- Merge or delete paragraphs that do not add a new analytical layer
+
+Default principle:
+- specificity over abstraction
+- constraint over theme
+- mechanism over outcome
+
 ## Anti-Patterns (Never Do)
 
 - ✗ Invent individual analyst personas with fake credentials

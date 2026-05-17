@@ -159,6 +159,20 @@ Revise threshold:
 Reject threshold:
 - any category below 5
 
+## Second-Iteration Revision Gate
+
+Use this gate when an article is being upgraded rather than created from scratch.
+
+Must be true after revision:
+- every major claim is anchored in a named company, policy framework, infrastructure system, or capital-flow example
+- at least one explicit mechanism explains how the system works
+- at least one binding constraint is visible
+- 2-3 spine statements clearly define the thesis
+- generic language has been removed or replaced
+- each paragraph adds a distinct analytical layer
+
+If these are not true, revise again before publishing.
+
 If in doubt:
 - do not publish
 - revise for depth

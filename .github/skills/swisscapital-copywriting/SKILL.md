@@ -107,6 +107,24 @@ Minimum publication baseline:
 - no category below 7
 - average at least 8 for Strategic Deep Dive
 
+## Second-Iteration Upgrade Protocol
+
+Use this when revising an existing article for Bloomberg / FT / Economist-level credibility.
+
+Required moves:
+- increase evidence density with named companies, policy frameworks, and infrastructure systems
+- replace outcome language with mechanism language
+- add system friction: GPU supply, energy limits, chip bottlenecks, regulation, capex cycles, geopolitical fragmentation
+- add 2-3 spine statements that crystallize the thesis
+- remove generic phrases that blur the argument
+- merge any paragraph that does not add a new analytical layer
+
+Revision rule:
+- if a sentence could appear in any finance article, rewrite it until it becomes specific to the system being analyzed
+
+Preferred wording pattern:
+- "X is happening because Y constraint binds through Z mechanism"
+
 ## Red-Flag Terms to Avoid
 - game-changing
 - revolutionary
@@ -150,3 +168,10 @@ Better one exceptional piece than ten generic pieces.
 4. Build second-order effects: market structure, governance, and geopolitical implications.
 5. End with long-horizon capital consequences.
 6. Score using the 7-category framework and revise weak categories.
+
+## Second-Iteration Revision Test
+Before publishing a revised article, ask:
+- What is more precise now than in the previous draft?
+- Which claim is now evidence-backed instead of implied?
+- Which constraint is now visible and measurable?
+- Where did generic language get removed?
