@@ -17,7 +17,7 @@ function getInitialTheme(): Theme {
   return window.matchMedia("(prefers-color-scheme: dark)").matches ? "dark" : "light";
 }
 
-export function ThemeToggle({ className = "" }: { className?: string }) {
+export function ThemeToggle() {
   const [theme, setTheme] = useState<Theme>(() => getInitialTheme());
 
   useEffect(() => {
@@ -36,7 +36,7 @@ export function ThemeToggle({ className = "" }: { className?: string }) {
       type="button"
       onClick={toggleTheme}
       aria-label="Toggle color theme"
-      className={`inline-flex h-9 w-9 items-center justify-center rounded-full border border-border bg-panel text-ink transition hover:-translate-y-0.5 hover:border-ink/40 ${className}`}
+      className="inline-flex h-9 w-9 items-center justify-center rounded-full border border-border bg-panel text-ink transition hover:-translate-y-0.5 hover:border-ink/40"
     >
       <svg viewBox="0 0 24 24" className="h-4 w-4" fill="none" stroke="currentColor" strokeWidth="1.8">
         <circle cx="12" cy="12" r="4.25" />
