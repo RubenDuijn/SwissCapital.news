@@ -26,6 +26,10 @@ It must not feel:
 - hype-driven
 - sensational
 
+Authorship rule:
+- Use institutional bylines only.
+- Do not invent named analysts, fake bios, or unverifiable affiliations.
+
 ## Voice Rules
 - Prefer measured conclusions over dramatic claims.
 - Use analytical language, not promotional language.
@@ -40,6 +44,7 @@ For article drafts, include:
 3. Incentive analysis
 4. Capital implications
 5. Long-term systemic interpretation
+6. Named examples and source-backed references where relevant
 
 For homepage/marketing copy:
 - Keep lines concise and confidence-driven.
@@ -65,6 +70,7 @@ Reject or revise copy if it is:
 - disconnected from incentives and systems
 - overly tied to daily news churn
 - indistinguishable from mass AI output
+- elegant but unsupported by named evidence
 
 ## Preferred Themes
 - AI infrastructure and capital concentration

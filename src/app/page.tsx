@@ -17,6 +17,15 @@ export default function Home() {
         <p className="mt-6 max-w-2xl text-base leading-7 text-muted md:text-lg">
           Independent structural analysis for decision-makers navigating long-cycle shifts in power, technology, and capital.
         </p>
+        <div className="mt-6 flex flex-wrap items-center gap-3 text-sm text-muted">
+          <span>Institutional desk bylines</span>
+          <span className="text-border">•</span>
+          <span>Public-source grounded analysis</span>
+          <span className="text-border">•</span>
+          <Link href="/archive" className="story-link text-ink">
+            View archive
+          </Link>
+        </div>
       </section>
 
       <section className="fade-in-up fade-delay-1 grid gap-8 border-b border-border py-12 lg:grid-cols-[1.2fr_0.8fr]">
@@ -45,6 +54,10 @@ export default function Home() {
           <p className="mt-4 text-sm leading-7 text-muted">
             We publish selectively. The objective is editorial signal, not volume.
           </p>
+          <div className="mt-6 space-y-2 border-t border-border pt-5 text-sm text-muted">
+            <p>Bylines use institutional desk attribution rather than persona-led commentary.</p>
+            <p>Anchor essays are structured around thesis, incentives, capital implications, and long-term system effects.</p>
+          </div>
           <Link href="/about" className="mt-8 inline-flex items-center rounded-full border border-ink bg-ink px-5 py-2.5 text-sm text-background transition hover:-translate-y-0.5 hover:bg-charcoal">
             Read the Editorial Charter
           </Link>
@@ -54,8 +67,8 @@ export default function Home() {
       <section className="fade-in-up fade-delay-2 py-12">
         <div className="flex items-end justify-between gap-4">
           <h2 className="text-3xl text-ink md:text-4xl">Foundational Analysis</h2>
-          <Link href="/about" className="story-link text-sm text-muted">
-            Publication Mission
+          <Link href="/archive" className="story-link text-sm text-muted">
+            Full Archive
           </Link>
         </div>
         <div className="mt-7 grid gap-5 md:grid-cols-2 xl:grid-cols-3">

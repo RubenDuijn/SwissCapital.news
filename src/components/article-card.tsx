@@ -17,7 +17,7 @@ export function ArticleCard({ article, compact = false }: ArticleCardProps) {
       </h3>
       <p className="mt-3 text-sm leading-6 text-muted">{article.dek}</p>
       <div className="mt-6 flex items-center justify-between border-t border-border pt-4 text-xs text-muted">
-        <span>{article.author}</span>
+        <span>{article.publishedAt}</span>
         <span>{article.readTime}</span>
       </div>
     </article>

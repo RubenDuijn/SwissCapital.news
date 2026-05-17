@@ -13,11 +13,14 @@ export function Footer() {
         <div className="space-y-2 text-sm text-muted">
           <p>Zurich | Geneva | London</p>
           <div className="flex items-center gap-4">
+            <Link href="/archive" className="story-link">
+              Archive
+            </Link>
             <Link href="/about" className="story-link">
               Editorial Charter
             </Link>
             <Link href="/newsletter" className="story-link">
-              Newsletter
+              Weekly Briefing
             </Link>
           </div>
           <p className="text-xs">© {new Date().getFullYear()} SwissCapital.news</p>

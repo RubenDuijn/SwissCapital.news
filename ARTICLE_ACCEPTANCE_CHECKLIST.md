@@ -25,6 +25,8 @@ Reject if it feels like:
 - clickbait or sensational journalism
 - conspiracy framing
 
+Reject if credibility depends on invented authors, invented credentials, or unverified personas.
+
 ## Core Thesis Gate
 A publishable article must include:
 - a clear opening thesis in the first section
@@ -42,6 +44,7 @@ The article should show:
 - incentive analysis (who benefits, who bears risk)
 - second-order effects
 - long-horizon interpretation
+- named examples, institutions, companies, or policy frameworks where relevant
 
 Revise if:
 - analysis remains first-order only
@@ -57,6 +60,16 @@ The piece must answer at least one:
 Reject if:
 - no capital implication is identified
 - implications are generic and transferable to any topic
+
+## Sourcing Gate
+The piece should include enough grounding to be inspectable:
+- public filings, official data, policy documents, or institutional research
+- named examples rather than abstract placeholders
+- references or endnotes when claims rely on specific frameworks or disclosures
+
+Reject if:
+- the article reads like unsupported macro summary
+- there are no named examples where evidence clearly requires them
 
 ## Tone and Language Gate
 Preferred style:

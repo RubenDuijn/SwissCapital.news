@@ -49,10 +49,16 @@ export default async function ArticlePage({ params }: ArticlePageProps) {
           <div className="mt-7 flex flex-wrap items-center gap-2 text-sm text-muted">
             <span>{article.author}</span>
             <span className="text-border">•</span>
+            <span>{article.authorNote}</span>
+            <span className="text-border">•</span>
             <time>{article.publishedAt}</time>
             <span className="text-border">•</span>
             <span>{article.readTime}</span>
           </div>
+
+          <p className="mt-4 max-w-2xl text-sm leading-7 text-muted">
+            This analysis is published under institutional authorship. SwissCapital.news uses desk bylines for research-led essays rather than individual commentator branding.
+          </p>
 
           <div className="mt-6 flex items-center gap-2 text-xs uppercase tracking-[0.14em] text-muted">
             <span>Share</span>
@@ -77,9 +83,30 @@ export default async function ArticlePage({ params }: ArticlePageProps) {
             “{article.pullQuote}”
           </blockquote>
 
-          <p>
-            Related dynamics are tracked in our weekly briefing, where we map cross-sector implications and update key scenarios.
-          </p>
+        </section>
+
+        <section className="fade-in-up mt-12 border-t border-border pt-8">
+          <div className="grid gap-6 md:grid-cols-[0.8fr_1.2fr]">
+            <div>
+              <p className="text-xs uppercase tracking-[0.16em] text-muted">Research Basis</p>
+              <p className="mt-3 text-sm leading-7 text-muted">
+                SwissCapital.news uses public filings, policy documents, institutional reports, and official market disclosures to ground long-form analysis.
+              </p>
+            </div>
+            <div>
+              <ol className="space-y-3 text-sm leading-7 text-muted">
+                {article.references.map((reference, index) => (
+                  <li key={reference.href}>
+                    <span className="mr-2 text-ink">[{index + 1}]</span>
+                    <a href={reference.href} target="_blank" rel="noreferrer" className="story-link text-ink">
+                      {reference.title}
+                    </a>
+                    <span className="ml-2">{reference.source}</span>
+                  </li>
+                ))}
+              </ol>
+            </div>
+          </div>
         </section>
       </article>
 

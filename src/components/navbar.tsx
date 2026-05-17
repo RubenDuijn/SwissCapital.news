@@ -3,8 +3,9 @@ import { ThemeToggle } from "@/components/theme-toggle";
 
 const navItems = [
   { label: "Home", href: "/" },
+  { label: "Archive", href: "/archive" },
   { label: "About", href: "/about" },
-  { label: "Newsletter", href: "/newsletter" },
+  { label: "Briefing", href: "/newsletter" },
 ];
 
 export function Navbar() {

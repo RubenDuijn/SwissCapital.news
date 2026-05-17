@@ -29,6 +29,12 @@ It must never feel:
 ## Editorial Mission
 SwissCapital.news examines how capital, institutions, technology, and geopolitical systems interact beneath the surface of current events.
 
+## Credibility Rules
+- Do not invent analyst personas or unverified editorial biographies.
+- Use institutional bylines such as SwissCapital Research, SwissCapital Analysis, or Editorial Desk.
+- Anchor strategic essays in named companies, policy frameworks, official disclosures, and public-source references.
+- The site should signal established publication standards through archive depth, sourcing, dates, and methodology clarity.
+
 ## Tone and Writing Standard
 Tone:
 - measured
@@ -61,6 +67,8 @@ Avoid:
 - generic summaries
 - mass-produced AI tone
 - personality-driven commentary
+- unsupported macro claims without named evidence
+- elegant but thin executive-summary copy
 
 ## Strategic Clarification
 SwissCapital.news is not:
