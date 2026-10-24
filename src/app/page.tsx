@@ -6,6 +6,10 @@ import { featuredArticle, latestAnalysis, topics } from "@/lib/content";
 export default function Home() {
   const leadStory = featuredArticle;
   const latest = latestAnalysis.slice(1, 5);
+  const aiBoom = latestAnalysis.find((article) => article.slug === "ai-boom-economic-revolution-or-market-mispricing");
+  const geopolitics = latestAnalysis.find(
+    (article) => article.slug === "geopolitics-and-markets-energy-trade-and-risk-pricing",
+  );
 
   return (
     <div className="pb-16 pt-10 md:pt-16">
@@ -64,7 +68,23 @@ export default function Home() {
         </aside>
       </section>
 
-      <section className="fade-in-up fade-delay-2 py-12">
+      {(aiBoom || geopolitics) && (
+        <section className="fade-in-up fade-delay-2 border-b border-border py-12">
+          <div className="flex items-end justify-between gap-4">
+            <h2 className="text-3xl text-ink md:text-4xl">Current Focus</h2>
+            <Link href="/archive" className="story-link text-sm text-muted">
+              Full Archive
+            </Link>
+          </div>
+
+          <div className="mt-7 grid gap-5 md:grid-cols-2">
+            {aiBoom && <ArticleCard article={aiBoom} />}
+            {geopolitics && <ArticleCard article={geopolitics} />}
+          </div>
+        </section>
+      )}
+
+      <section className="fade-in-up fade-delay-3 py-12">
         <div className="flex items-end justify-between gap-4">
           <h2 className="text-3xl text-ink md:text-4xl">Foundational Analysis</h2>
           <Link href="/archive" className="story-link text-sm text-muted">
