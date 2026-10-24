@@ -1,0 +1,51 @@
+{
+  "slug": "quiet-return-of-industrial-policy",
+  "title": "The Quiet Return of Industrial Policy",
+  "dek": "States are re-emerging as long-horizon capital allocators in strategic sectors, with consequences for returns, competition, and alliance structures.",
+  "topic": "Systems",
+  "author": "SwissCapital Analysis",
+  "authorNote": "Policy and systems desk",
+  "publishedAt": "May 10, 2026",
+  "readTime": "14 min read",
+  "format": "Analytical Essay",
+  "imageAlt": "Industrial corridor with fabrication facilities and freight rail",
+  "pullQuote": "Industrial policy is no longer exceptional intervention; it is becoming the baseline operating condition for strategic markets.",
+  "body": [
+    "Industrial policy has moved from cyclical exception to baseline market architecture. In strategic sectors, the state is no longer only referee; it is a co-designer of return profiles through tax credits, grants, guaranteed offtake, export rules, and permitting priority. Capital now evaluates policy frameworks as part of core underwriting, not as exogenous political risk.",
+    "The mechanism is straightforward: governments are pricing resilience as a public good and using fiscal tools to close the gap between private hurdle rates and strategic capacity needs. That changes project viability at the margin. A battery plant, fab, or grid component facility that fails a purely market discount-rate test can become financeable once policy compresses construction risk, demand uncertainty, or financing cost.",
+    "In the United States, CHIPS and the Inflation Reduction Act illustrate this shift in two different ways: CHIPS lowers entry friction for semiconductor capacity linked to national-security goals, while IRA provisions create multi-year demand visibility for clean-energy and industrial decarbonization investments.[1][2] In Europe, the Net-Zero Industry framework and state-aid flexibility aim to prevent strategic sectors from being pulled entirely into US subsidy gravity.[3]",
+    "This is not a return to command economics. It is a transition to incentive-governed capitalism in which public balance sheets shape the distribution of private risk. The most important variable is therefore execution quality: policy ambition without grid capacity, labor pipelines, and permitting throughput does not produce investable output. Capital is increasingly differentiating between jurisdictions that announce and jurisdictions that deliver.",
+    "Corporate behavior has adjusted accordingly. Boards now sequence capex around policy durability and administrative credibility, not only around labor cost or end-market growth. The relevant due-diligence stack includes subsidy eligibility, local-content constraints, trade-exposure scenarios, and potential election-cycle reversals. Location strategy is becoming policy strategy by another name.",
+    "Spine sentence: industrial policy now functions as a forward guidance system for private capital, signaling where states are willing to absorb first-loss risk in exchange for strategic capacity. Once that signal is credible, financing costs decline for aligned sectors and rise for non-aligned ones. The policy perimeter therefore becomes a valuation perimeter.",
+    "Second-order effects are becoming visible in alliance economics. Subsidy competition among allies can fragment supply chains if interoperability rules diverge, but it can also accelerate bloc-level redundancy in semiconductors, energy hardware, and defense-adjacent manufacturing. The direction depends less on headline funding totals and more on whether standards, procurement rules, and trade controls are harmonized.",
+    "For investors, the practical implication is to model industrial policy as a long-duration cash-flow modifier rather than a one-off catalyst. Policy can improve downside protection by anchoring demand, but it can also introduce regime risk when fiscal constraints tighten or political coalitions shift. The key analytical task is scenario-weighting policy continuity, not assuming linear support.",
+    "The long-term result is not deglobalization but a re-layered globalization organized by strategic blocs and policy-compatible corridors. Capital will continue to cross borders, but with stronger filters around security alignment, supply-chain trust, and institutional execution. The central question is no longer whether industrial policy has returned. It is which states can translate policy intent into durable industrial cash flows without impairing fiscal credibility."
+  ],
+  "references": [
+    {
+      "title": "CHIPS Program Office",
+      "source": "US Department of Commerce",
+      "href": "https://www.commerce.gov/issues/chips"
+    },
+    {
+      "title": "Inflation Reduction Act Guidebook",
+      "source": "The White House",
+      "href": "https://www.whitehouse.gov/cleanenergy/inflation-reduction-act-guidebook/"
+    },
+    {
+      "title": "Net-Zero Industry Act",
+      "source": "European Commission",
+      "href": "https://single-market-economy.ec.europa.eu/industry/sustainability/net-zero-industry-act_en"
+    },
+    {
+      "title": "State of U.S. Semiconductor Manufacturing",
+      "source": "Semiconductor Industry Association",
+      "href": "https://www.semiconductors.org/chips/"
+    },
+    {
+      "title": "Fiscal Monitor",
+      "source": "IMF",
+      "href": "https://www.imf.org/en/Publications/FM"
+    }
+  ]
+}
