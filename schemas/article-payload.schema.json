@@ -1,0 +1,194 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "$id": "https://swisscapital.news/schemas/article-payload.schema.json",
+  "title": "SwissCapitalArticlePayload",
+  "type": "object",
+  "additionalProperties": false,
+  "required": [
+    "slug",
+    "title",
+    "dek",
+    "topic",
+    "author",
+    "authorNote",
+    "publishedAt",
+    "readTime",
+    "format",
+    "imageAlt",
+    "body",
+    "pullQuote",
+    "references",
+    "scorecard",
+    "decision",
+    "editorialChecks"
+  ],
+  "properties": {
+    "slug": {
+      "type": "string",
+      "pattern": "^[a-z0-9]+(?:-[a-z0-9]+)*$",
+      "minLength": 8,
+      "maxLength": 120
+    },
+    "title": {
+      "type": "string",
+      "minLength": 20,
+      "maxLength": 180
+    },
+    "dek": {
+      "type": "string",
+      "minLength": 40,
+      "maxLength": 320
+    },
+    "topic": {
+      "type": "string",
+      "enum": [
+        "Capital",
+        "AI & Technology",
+        "Geopolitics",
+        "Systems",
+        "Risk",
+        "Energy",
+        "Biotechnology"
+      ]
+    },
+    "author": {
+      "type": "string",
+      "enum": [
+        "SwissCapital Research",
+        "SwissCapital Analysis",
+        "Editorial Desk"
+      ]
+    },
+    "authorNote": {
+      "type": "string",
+      "minLength": 8,
+      "maxLength": 120
+    },
+    "publishedAt": {
+      "type": "string",
+      "pattern": "^[A-Z][a-z]+\\s[0-9]{1,2},\\s[0-9]{4}$"
+    },
+    "readTime": {
+      "type": "string",
+      "pattern": "^[0-9]{1,2} min read$"
+    },
+    "format": {
+      "type": "string",
+      "enum": [
+        "Signal Brief",
+        "Analytical Essay",
+        "Strategic Deep Dive"
+      ]
+    },
+    "imageAlt": {
+      "type": "string",
+      "minLength": 12,
+      "maxLength": 180
+    },
+    "body": {
+      "type": "array",
+      "minItems": 5,
+      "maxItems": 40,
+      "items": {
+        "type": "string",
+        "minLength": 120
+      }
+    },
+    "pullQuote": {
+      "type": "string",
+      "minLength": 60,
+      "maxLength": 260
+    },
+    "references": {
+      "type": "array",
+      "minItems": 4,
+      "maxItems": 30,
+      "items": {
+        "type": "object",
+        "additionalProperties": false,
+        "required": [
+          "title",
+          "source",
+          "href"
+        ],
+        "properties": {
+          "title": {
+            "type": "string",
+            "minLength": 6,
+            "maxLength": 180
+          },
+          "source": {
+            "type": "string",
+            "minLength": 2,
+            "maxLength": 100
+          },
+          "href": {
+            "type": "string",
+            "format": "uri"
+          }
+        }
+      }
+    },
+    "scorecard": {
+      "type": "object",
+      "additionalProperties": false,
+      "required": [
+        "analyticalDepth",
+        "structuralClarity",
+        "evidenceDensity",
+        "systemicInsight",
+        "institutionalTone",
+        "informationCompression",
+        "credibilityPerception",
+        "average"
+      ],
+      "properties": {
+        "analyticalDepth": { "type": "integer", "minimum": 1, "maximum": 10 },
+        "structuralClarity": { "type": "integer", "minimum": 1, "maximum": 10 },
+        "evidenceDensity": { "type": "integer", "minimum": 1, "maximum": 10 },
+        "systemicInsight": { "type": "integer", "minimum": 1, "maximum": 10 },
+        "institutionalTone": { "type": "integer", "minimum": 1, "maximum": 10 },
+        "informationCompression": { "type": "integer", "minimum": 1, "maximum": 10 },
+        "credibilityPerception": { "type": "integer", "minimum": 1, "maximum": 10 },
+        "average": { "type": "number", "minimum": 1, "maximum": 10 }
+      }
+    },
+    "decision": {
+      "type": "string",
+      "enum": [
+        "publish",
+        "revise",
+        "reject"
+      ]
+    },
+    "editorialChecks": {
+      "type": "object",
+      "additionalProperties": false,
+      "required": [
+        "identityGatePassed",
+        "thesisGatePassed",
+        "structuralDepthGatePassed",
+        "capitalRelevanceGatePassed",
+        "sourcingGatePassed",
+        "toneGatePassed",
+        "originalityGatePassed",
+        "timelessnessGatePassed",
+        "bannedPhraseHits"
+      ],
+      "properties": {
+        "identityGatePassed": { "type": "boolean" },
+        "thesisGatePassed": { "type": "boolean" },
+        "structuralDepthGatePassed": { "type": "boolean" },
+        "capitalRelevanceGatePassed": { "type": "boolean" },
+        "sourcingGatePassed": { "type": "boolean" },
+        "toneGatePassed": { "type": "boolean" },
+        "originalityGatePassed": { "type": "boolean" },
+        "timelessnessGatePassed": { "type": "boolean" },
+        "bannedPhraseHits": {
+          "type": "array",
+          "items": { "type": "string" }
+        }
+      }
+    }
+  }
+}

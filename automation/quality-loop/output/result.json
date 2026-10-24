@@ -1,0 +1,6 @@
+{
+  "status": "blocked_missing_api_keys",
+  "reason": "OPENAI_API_KEY and ANTHROPIC_API_KEY are not set in the shell",
+  "nextStep": "Set API keys and run npm run article:quality-loop with the draft input file",
+  "outputDir": "automation/quality-loop/output"
+}

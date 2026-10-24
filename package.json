@@ -6,7 +6,12 @@
     "dev": "next dev",
     "build": "next build",
     "start": "next start",
-    "lint": "eslint"
+    "lint": "eslint",
+    "editorial:update": "node automation/editorial/run-weekly-update.mjs",
+    "article:quality-loop": "node automation/quality-loop/run-quality-loop.mjs",
+    "article:quality-gate": "node automation/quality-loop/check-quality-gate.mjs",
+    "n8n:start": "cd automation/n8n && N8N_SECURE_COOKIE=false npx n8n start --tunnel",
+    "n8n:import": "cd automation/n8n && npx n8n import:workflow --input=../../automation/n8n/workflows/swisscapital-article-pipeline.json"
   },
   "dependencies": {
     "next": "16.2.6",

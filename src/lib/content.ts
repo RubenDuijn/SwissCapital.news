@@ -34,6 +34,10 @@ export type Article = {
   references: Reference[];
 };
 
+type RawArticle = Omit<Article, "readTime"> & {
+  readTime?: string;
+};
+
 const CONTENT_ROOT = path.join(process.cwd(), "src/content");
 const ARTICLES_DIR = path.join(CONTENT_ROOT, "articles");
 
@@ -47,16 +51,41 @@ function parsePublishedDate(input: string) {
   return Number.isNaN(parsed.getTime()) ? 0 : parsed.getTime();
 }
 
+function estimateReadTime(body: string[]) {
+  const wordsPerMinute = 220;
+  const plain = body
+    .join(" ")
+    .replace(/\[([^\]]+)\]\(([^)]+)\)/g, "$1")
+    .replace(/[^\w\s]/g, " ")
+    .replace(/\s+/g, " ")
+    .trim();
+
+  const wordCount = plain ? plain.split(" ").length : 0;
+  const minutes = Math.max(1, Math.round(wordCount / wordsPerMinute));
+  return `${minutes} min read`;
+}
+
+function withComputedReadTime(article: RawArticle): Article {
+  return {
+    ...article,
+    readTime: estimateReadTime(article.body),
+  };
+}
+
 function loadArticles(): Article[] {
   const files = fs.readdirSync(ARTICLES_DIR).filter((name) => name.endsWith(".json"));
-  const articles = files.map((fileName) => readJsonFile<Article>(path.join(ARTICLES_DIR, fileName)));
+  const articles = files
+    .map((fileName) => readJsonFile<RawArticle>(path.join(ARTICLES_DIR, fileName)))
+    .map(withComputedReadTime);
 
   return articles.sort((a, b) => parsePublishedDate(b.publishedAt) - parsePublishedDate(a.publishedAt));
 }
 
 export const topics = readJsonFile<Topic[]>(path.join(CONTENT_ROOT, "topics.json"));
 
-const featuredArticleFromFile = readJsonFile<Article>(path.join(CONTENT_ROOT, "featured-article.json"));
+const featuredArticleFromFile = withComputedReadTime(
+  readJsonFile<RawArticle>(path.join(CONTENT_ROOT, "featured-article.json")),
+);
 const loadedArticles = loadArticles();
 
 export const featuredArticle =

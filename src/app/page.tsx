@@ -5,15 +5,9 @@ import { featuredArticle, latestAnalysis, topics } from "@/lib/content";
 
 export default function Home() {
   const leadStory = featuredArticle;
-  const currentFocusSlugs = [
-    "ai-boom-economic-revolution-or-market-mispricing",
-    "geopolitics-and-markets-energy-trade-and-risk-pricing",
-  ];
-  const currentFocus = currentFocusSlugs
-    .map((slug) => latestAnalysis.find((article) => article.slug === slug))
-    .filter((article): article is NonNullable<typeof article> => Boolean(article));
+  const currentFocus = latestAnalysis.filter((article) => article.slug !== leadStory.slug).slice(0, 2);
   const foundational = latestAnalysis
-    .filter((article) => !currentFocusSlugs.includes(article.slug) && article.slug !== leadStory.slug)
+    .filter((article) => !currentFocus.some((focus) => focus.slug === article.slug) && article.slug !== leadStory.slug)
     .slice(0, 4);
 
   return (

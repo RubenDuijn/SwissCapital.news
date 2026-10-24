@@ -12,14 +12,15 @@
   "pullQuote": "AI is now an earnings-conversion story: the winning balance sheets will be those that translate capex intensity into repeatable cash generation before financing conditions tighten again.",
   "body": [
     "AI has crossed from a software narrative into a capital cycle. The investment question is no longer whether adoption exists; it is whether spending intensity can be converted into durable earnings and free cash flow before discount-rate pressure compresses valuation multiples.",
-    "How much value is already visible? Recent primary-source disclosures show meaningful commercialization. Microsoft reported FY26 Q4 revenue of USD 90.0 billion, up 18% year over year, with Intelligent Cloud revenue of USD 39.3 billion (up 32%) and Azure and other cloud services up 43% ([Microsoft FY26 Q4 release](https://www.microsoft.com/en-us/Investor/earnings/FY-2026-Q4/press-release-webcast)). At annual scale, Microsoft reported FY26 revenue of USD 331.8 billion and operating income of USD 155.2 billion.",
-    "Where is value accruing today? The strongest documented accrual remains upstream: chipmakers and hyperscale cloud platforms. NVIDIA reported fiscal Q2 2027 revenue of USD 96.2 billion, with data center revenue of USD 89.0 billion, both up sharply year over year ([NVIDIA quarterly results portal](https://investor.nvidia.com/financial-info/default.aspx)). The early-cycle economic rents are therefore still concentrated in compute suppliers and cloud distributors rather than broadly distributed across listed adopters.",
-    "What does the conversion test look like in practice? Microsoft's FY26 cash-flow statement reported net cash from operations of USD 182.9 billion and additions to property and equipment of USD 115.9 billion. A simple cash conversion lens implies residual operating cash after capex of about USD 67.0 billion before financing decisions. That is robust, but it also shows how much execution depends on keeping utilization, pricing, and enterprise retention high while depreciation and maintenance capital climb.",
+    "How much value is already visible? Recent primary-source disclosures show meaningful commercialization. In its [FY26 Q4 earnings release](https://www.microsoft.com/en-us/Investor/earnings/FY-2026-Q4/press-release-webcast), Microsoft reported revenue of USD 90.0 billion, up 18% year over year, with Intelligent Cloud revenue of USD 39.3 billion (up 32%) and Azure and other cloud services up 43%. At annual scale, [Microsoft's FY26 annual reporting](https://www.microsoft.com/investor/reports/ar26/index.html) shows revenue of USD 331.8 billion and operating income of USD 155.2 billion.",
+    "Where is value accruing today? The strongest documented accrual remains upstream: chipmakers and hyperscale cloud platforms. In its [second-quarter fiscal 2027 earnings release](https://nvidianews.nvidia.com/news/nvidia-announces-financial-results-for-second-quarter-fiscal-2027), NVIDIA reported revenue of USD 96.2 billion, with data center revenue of USD 89.0 billion, both up sharply year over year. The early-cycle economic rents are therefore still concentrated in compute suppliers and cloud distributors rather than broadly distributed across listed adopters.",
+    "What does the conversion test look like in practice? Microsoft's [FY26 annual report cash-flow statement](https://www.microsoft.com/investor/reports/ar26/index.html) reported net cash from operations of USD 182.9 billion and additions to property and equipment of USD 115.9 billion. A simple cash conversion lens implies residual operating cash after capex of about USD 67.0 billion before financing decisions. That is robust, but it also shows how much execution depends on keeping utilization, pricing, and enterprise retention high while depreciation and maintenance capital climb.",
     "This is the core distinction between an economic transformation and an attractive valuation. AI can be economically real while portions of equity pricing still embed optimistic assumptions about monetization speed, competitive stability, and margin durability. Investors should separate four variables: demand growth, margin conversion, free-cash-flow conversion, and multiple support.",
     "Market structure currently magnifies that distinction. Broad US indices remain heavily influenced by mega-cap technology leadership, so index resilience partly reflects concentration rather than broad earnings diffusion. In that context, a thematic signal can look stronger than the underlying cross-section of monetization.",
-    "Rates and inflation still matter for every long-duration growth narrative. In the Federal Reserve's September 2026 SEP, median projections show PCE inflation at 3.7% in 2026 and 2.3% in 2027, while the median federal funds path is 4.1% in both 2026 and 2027 ([Fed SEP, Sept 2026](https://www.federalreserve.gov/monetarypolicy/fomcprojtabl20260916.htm)). This is a disinflation path, but not a return to ultra-cheap capital.",
-    "Observed market data keep that discipline in focus. FRED series show the US 10-year Treasury yield at 4.96% on 2026-10-22, the 10-year real yield at 2.64% on the same date, and 10-year breakeven inflation near 2.34% on 2026-10-23. Real yields at these levels raise the hurdle rate for earnings far in the future and increase the penalty for missed conversion milestones ([FRED DGS10](https://fred.stlouisfed.org/series/DGS10), [FRED DFII10](https://fred.stlouisfed.org/series/DFII10), [FRED T10YIE](https://fred.stlouisfed.org/series/T10YIE)).",
-    "Energy remains an underpriced variable in many AI valuation narratives. The EIA's October 2026 STEO raised the near-term Brent assumption, with 4Q26 average Brent forecast at USD 105/b and 2027 at USD 84/b under improving flow assumptions ([EIA STEO, release date 2026-10-06](https://www.eia.gov/outlooks/steo/)). In parallel, spot Brent in public market data remained volatile in October, reinforcing that power and fuel costs can still affect data-center economics and regional project returns ([FRED DCOILBRENTEU](https://fred.stlouisfed.org/series/DCOILBRENTEU)).",
+    "Rates and inflation still matter for every long-duration growth narrative. In the Federal Reserve's [Summary of Economic Projections (September 2026)](https://www.federalreserve.gov/monetarypolicy/fomcprojtabl20260916.htm), median projections show PCE inflation at 3.7% in 2026 and 2.3% in 2027, while the median federal funds path is 4.1% in both 2026 and 2027. This is a disinflation path, but not a return to ultra-cheap capital.",
+    "Observed market data keep that discipline in focus. As of 2026-10-22, FRED data show the US [10-year Treasury yield](https://fred.stlouisfed.org/series/DGS10) at 4.96% and the [10-year real yield](https://fred.stlouisfed.org/series/DFII10) at 2.64%; as of 2026-10-23, [10-year breakeven inflation](https://fred.stlouisfed.org/series/T10YIE) was 2.34%. Real yields at these levels raise the hurdle rate for earnings far in the future and increase the penalty for missed conversion milestones.",
+    "Energy remains an underpriced variable in many AI valuation narratives. The U.S. EIA's [Short-Term Energy Outlook (October 2026)](https://www.eia.gov/outlooks/steo/) raised the near-term Brent assumption, with 4Q26 average Brent forecast at USD 105/b and 2027 at USD 84/b under improving flow assumptions. In parallel, [Brent spot prices](https://fred.stlouisfed.org/series/DCOILBRENTEU) remained volatile in October, reinforcing that power and fuel costs can still affect data-center economics and regional project returns.",
+    "For a parallel transmission analysis of how energy and policy risk can feed discount rates, see our [geopolitics and risk-pricing framework](/articles/geopolitics-and-markets-energy-trade-and-risk-pricing).",
     "What evidence supports adequate returns on current infrastructure spending? The strongest evidence is recurring enterprise demand plus operating leverage in scaled platforms: growth in cloud revenue, expanding contractual backlogs, and sustained operating cash generation despite capex expansion. What remains less proven is broad downstream earnings capture by non-platform adopters at index scale.",
     "What could disappoint despite continued AI adoption? Five mechanisms matter most: slower enterprise workflow integration than expected, pricing pressure from model and infrastructure competition, persistent power and grid bottlenecks, regulatory/compliance cost escalation, and a higher-for-longer real-rate backdrop that compresses long-duration multiples.",
     "Are current valuations earnings-supported or assumption-heavy? The answer is mixed. Platform leaders increasingly show earnings evidence; the wider AI trade still depends on assumptions about diffusion speed and second-order margin expansion across sectors. That means selectivity remains more defensible than undifferentiated thematic exposure.",
@@ -31,94 +32,49 @@
   ],
   "references": [
     {
-      "title": "Microsoft Earnings Release FY26 Q4",
+      "title": "Microsoft FY26 Q4 Earnings Release (Published July 29, 2026)",
       "source": "Microsoft",
       "href": "https://www.microsoft.com/en-us/Investor/earnings/FY-2026-Q4/press-release-webcast"
     },
     {
-      "title": "Microsoft Annual Report 2026",
+      "title": "Microsoft Annual Report 2026 (Published July 29, 2026)",
       "source": "Microsoft",
       "href": "https://www.microsoft.com/investor/reports/ar26/index.html"
     },
     {
-      "title": "NVIDIA Financial Reports and Latest Quarterly Results",
-      "source": "NVIDIA Investor Relations",
-      "href": "https://investor.nvidia.com/financial-info/default.aspx"
+      "title": "NVIDIA Second Quarter Fiscal 2027 Financial Results (Published August 26, 2026)",
+      "source": "NVIDIA",
+      "href": "https://nvidianews.nvidia.com/news/nvidia-announces-financial-results-for-second-quarter-fiscal-2027"
     },
     {
-      "title": "Summary of Economic Projections, September 2026",
+      "title": "Federal Reserve Summary of Economic Projections (September 16, 2026)",
       "source": "Federal Reserve",
       "href": "https://www.federalreserve.gov/monetarypolicy/fomcprojtabl20260916.htm"
     },
     {
-      "title": "FOMC Meeting Calendars and Statements",
-      "source": "Federal Reserve",
-      "href": "https://www.federalreserve.gov/monetarypolicy/fomccalendars.htm"
-    },
-    {
-      "title": "Monetary Policy Assessment of 24 September 2026",
-      "source": "Swiss National Bank",
-      "href": "https://www.snb.ch/en/publications/communication/press-releases-restricted/pre_20260924"
-    },
-    {
-      "title": "Electricity 2025",
-      "source": "International Energy Agency",
-      "href": "https://www.iea.org/reports/electricity-2025"
-    },
-    {
-      "title": "Short-Term Energy Outlook, October 2026",
+      "title": "U.S. EIA Short-Term Energy Outlook (Release Date October 6, 2026)",
       "source": "U.S. Energy Information Administration",
       "href": "https://www.eia.gov/outlooks/steo/"
     },
     {
-      "title": "Brent Crude Oil Spot Price (Daily)",
+      "title": "Brent Crude Oil Spot Price (FRED Daily Series)",
       "source": "FRED / U.S. EIA",
       "href": "https://fred.stlouisfed.org/series/DCOILBRENTEU"
     },
     {
-      "title": "10-Year Treasury Constant Maturity Rate",
+      "title": "10-Year Treasury Constant Maturity Rate (FRED DGS10)",
       "source": "FRED / U.S. Treasury",
       "href": "https://fred.stlouisfed.org/series/DGS10"
     },
     {
-      "title": "10-Year Treasury Inflation-Indexed Security, Constant Maturity",
+      "title": "10-Year Treasury Inflation-Indexed Security, Constant Maturity (FRED DFII10)",
       "source": "FRED / Federal Reserve Board",
       "href": "https://fred.stlouisfed.org/series/DFII10"
     },
     {
-      "title": "10-Year Breakeven Inflation Rate",
+      "title": "10-Year Breakeven Inflation Rate (FRED T10YIE)",
       "source": "FRED / Federal Reserve Bank of St. Louis",
       "href": "https://fred.stlouisfed.org/series/T10YIE"
-    },
-    {
-      "title": "S&P 500 Index",
-      "source": "FRED / S&P Dow Jones Indices",
-      "href": "https://fred.stlouisfed.org/series/SP500"
-    },
-    {
-      "title": "NASDAQ Composite Index",
-      "source": "FRED / NASDAQ",
-      "href": "https://fred.stlouisfed.org/series/NASDAQCOM"
-    },
-    {
-      "title": "Global Economic Prospects",
-      "source": "World Bank",
-      "href": "https://www.worldbank.org/en/publication/global-economic-prospects"
-    },
-    {
-      "title": "World Economic Outlook",
-      "source": "International Monetary Fund",
-      "href": "https://www.imf.org/en/Publications/WEO"
-    },
-    {
-      "title": "Global Financial Stability Report",
-      "source": "International Monetary Fund",
-      "href": "https://www.imf.org/en/Publications/GFSR"
-    },
-    {
-      "title": "BIS Annual Economic Report 2026",
-      "source": "Bank for International Settlements",
-      "href": "https://www.bis.org/publications/aer-2026.htm"
     }
   ]
 }

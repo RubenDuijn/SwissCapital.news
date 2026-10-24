@@ -12,16 +12,16 @@
   "pullQuote": "The financial cost of geopolitics is governed by duration and transmission: when shocks hit energy, inflation expectations, and discount rates for long enough, asset pricing regimes change.",
   "body": [
     "Geopolitical risk has returned to the center of macro strategy, but headline intensity is still a poor valuation model. Market impact becomes durable only when shocks propagate through physical energy flows, shipping reliability, inflation expectations, financing costs, and earnings guidance. Without persistence in those channels, many moves remain tactical volatility rather than regime change.",
-    "As of this update, the strongest evidence of persistence is in energy assumptions. The U.S. EIA's Short-Term Energy Outlook (released 2026-10-06, forecast completed 2026-10-01) still assumes constrained Middle East flows through Q4 2026 and lifted near-term Brent assumptions, with Q4 2026 average Brent forecast at USD 105/b and 2027 at USD 84/b ([EIA STEO](https://www.eia.gov/outlooks/steo/)).",
-    "Observed market data show that volatility channel directly. In the FRED Brent spot series, prices moved from USD 130.18 on 2026-10-08 to USD 115.22 on 2026-10-20, a large swing over eight trading sessions ([FRED DCOILBRENTEU](https://fred.stlouisfed.org/series/DCOILBRENTEU)). This is exactly the kind of movement that can alter inflation expectations and corporate cost assumptions even when the geopolitical narrative is unchanged.",
-    "Rates data imply that the inflation-to-discount-rate transmission remains active. FRED observations show the US 10-year Treasury yield at 4.96% on 2026-10-22 and the 10-year real yield at 2.64% on the same date, while 10-year breakeven inflation was around 2.34% on 2026-10-23. For equity valuation, that keeps the hurdle rate for long-duration cash flows elevated ([FRED DGS10](https://fred.stlouisfed.org/series/DGS10), [FRED DFII10](https://fred.stlouisfed.org/series/DFII10), [FRED T10YIE](https://fred.stlouisfed.org/series/T10YIE)).",
-    "Credit conditions have not fully repriced to stress, but they are not inert. The ICE BofA US High Yield option-adjusted spread stood at 3.40 percentage points on 2026-10-22 in FRED data. That is not a panic regime, but it is a useful monitor if energy and rates volatility starts to pressure earnings confidence ([FRED BAMLH0A0HYM2](https://fred.stlouisfed.org/series/BAMLH0A0HYM2)).",
-    "Currency behavior remains consistent with a selective risk-off pattern rather than a generalized dislocation. Recent FRED observations show USD/CHF around 0.8243 on 2026-10-16 and EUR/USD around 1.1231 on 2026-10-16. The Swiss franc's resilience still signals demand for balance-sheet and policy credibility during geopolitical noise, especially when energy uncertainty is high ([FRED DEXSZUS](https://fred.stlouisfed.org/series/DEXSZUS), [FRED DEXUSEU](https://fred.stlouisfed.org/series/DEXUSEU)).",
-    "Policy architecture is the second major channel. USTR Section 301 frameworks and BIS export-control regimes remain in force, which keeps tariff, compliance, and licensing friction embedded in cross-border operating models ([USTR Section 301](https://ustr.gov/issue-areas/enforcement/section-301-investigations/tariff-actions), [BIS export controls](https://www.bis.gov/licensing/exports-and-reexports-controls)). This is less about imminent trade collapse and more about structurally higher operating friction and capex duplication risk.",
-    "Regional transmission is uneven. Europe remains more exposed to imported energy and industrial-cost pressure, while US markets are relatively buffered by domestic energy scale but still vulnerable through duration-sensitive valuations. Germany's long-term yield proxy moved from around 2.62% in October 2025 to around 3.47% in September 2026 (monthly series), reinforcing that euro-area discount rates have shifted materially from prior lows ([FRED IRLTLT01DEM156N](https://fred.stlouisfed.org/series/IRLTLT01DEM156N)).",
-    "Switzerland sits in a distinct position: the SNB's September 2026 statement maintained the policy rate at 0% while explicitly citing higher oil-product prices and Middle East uncertainty as inflation-relevant risks. That combination keeps CHF policy credibility high while preserving sensitivity to imported energy shocks ([SNB policy assessment 2026-09-24](https://www.snb.ch/en/publications/communication/press-releases-restricted/pre_20260924)).",
-    "The macro-policy bridge remains central. In the Fed's September 2026 SEP, median projections point to PCE inflation at 3.7% in 2026 and 2.3% in 2027, with median federal funds at 4.1% in both years. In practical terms, renewed energy pressure can still delay expected easing and sustain a high discount-rate environment for growth-heavy equity segments ([Fed SEP](https://www.federalreserve.gov/monetarypolicy/fomcprojtabl20260916.htm)).",
-    "The AI-valuation link should therefore be analyzed as a chain, not a slogan: geopolitical disruption can raise energy and logistics costs; higher cost persistence can slow disinflation; slower disinflation can keep real yields elevated; elevated real yields can tighten financing assumptions for AI infrastructure; and tighter financing assumptions can compress multiples where earnings conversion remains back-loaded.",
+    "As of this update, the strongest evidence of persistence is in energy assumptions. The U.S. EIA's [Short-Term Energy Outlook (October 2026)](https://www.eia.gov/outlooks/steo/) (released 2026-10-06, forecast completed 2026-10-01) still assumes constrained Middle East flows through Q4 2026 and lifted near-term Brent assumptions, with Q4 2026 average Brent forecast at USD 105/b and 2027 at USD 84/b.",
+    "Observed market data show that volatility channel directly. In the [FRED Brent spot series](https://fred.stlouisfed.org/series/DCOILBRENTEU), prices moved from USD 130.18 on 2026-10-08 to USD 115.22 on 2026-10-20, a large swing over eight trading sessions. This is exactly the kind of movement that can alter inflation expectations and corporate cost assumptions even when the geopolitical narrative is unchanged.",
+    "Rates data imply that the inflation-to-discount-rate transmission remains active. As of 2026-10-22, FRED data show the US [10-year Treasury yield](https://fred.stlouisfed.org/series/DGS10) at 4.96% and the [10-year real yield](https://fred.stlouisfed.org/series/DFII10) at 2.64%; as of 2026-10-23, [10-year breakeven inflation](https://fred.stlouisfed.org/series/T10YIE) was 2.34%. For equity valuation, that keeps the hurdle rate for long-duration cash flows elevated.",
+    "Credit conditions have not fully repriced to stress, but they are not inert. The ICE BofA US High Yield option-adjusted spread stood at 3.40 percentage points on 2026-10-22 in [FRED high-yield spread data](https://fred.stlouisfed.org/series/BAMLH0A0HYM2). That is not a panic regime, but it is a useful monitor if energy and rates volatility starts to pressure earnings confidence.",
+    "Currency behavior remains consistent with a selective risk-off pattern rather than a generalized dislocation. FRED data show [USD/CHF](https://fred.stlouisfed.org/series/DEXSZUS) around 0.8243 on 2026-10-16 and [EUR/USD](https://fred.stlouisfed.org/series/DEXUSEU) around 1.1231 on the same date. The Swiss franc's resilience still signals demand for balance-sheet and policy credibility during geopolitical noise, especially when energy uncertainty is high.",
+    "Policy architecture is the second major channel. The [USTR Section 301 tariff actions and exclusion process](https://ustr.gov/issue-areas/enforcement/section-301-investigations/tariff-actions) and [BIS export and re-export controls guidance](https://www.bis.gov/licensing/exports-and-reexports-controls) keep tariff, compliance, and licensing friction embedded in cross-border operating models. This is less about imminent trade collapse and more about structurally higher operating friction and capex duplication risk.",
+    "Regional transmission is uneven. Europe remains more exposed to imported energy and industrial-cost pressure, while US markets are relatively buffered by domestic energy scale but still vulnerable through duration-sensitive valuations. Germany's monthly [long-term government bond yield proxy](https://fred.stlouisfed.org/series/IRLTLT01DEM156N) moved from around 2.62% in October 2025 to around 3.47% in September 2026, reinforcing that euro-area discount rates have shifted materially from prior lows.",
+    "Switzerland sits in a distinct position: the SNB's [Monetary Policy Assessment of 24 September 2026](https://www.snb.ch/en/publications/communication/press-releases-restricted/pre_20260924) maintained the policy rate at 0% while explicitly citing higher oil-product prices and Middle East uncertainty as inflation-relevant risks. That combination keeps CHF policy credibility high while preserving sensitivity to imported energy shocks.",
+    "The macro-policy bridge remains central. In the Federal Reserve's [Summary of Economic Projections (September 2026)](https://www.federalreserve.gov/monetarypolicy/fomcprojtabl20260916.htm), median projections point to PCE inflation at 3.7% in 2026 and 2.3% in 2027, with median federal funds at 4.1% in both years. In practical terms, renewed energy pressure can still delay expected easing and sustain a high discount-rate environment for growth-heavy equity segments.",
+    "The AI-valuation link should therefore be analyzed as a chain, not a slogan: geopolitical disruption can raise energy and logistics costs; higher cost persistence can slow disinflation; slower disinflation can keep real yields elevated; elevated real yields can tighten financing assumptions for AI infrastructure; and tighter financing assumptions can compress multiples where earnings conversion remains back-loaded. For the earnings-conversion side of that mechanism, see our [AI capital-cycle analysis](/articles/ai-boom-economic-revolution-or-market-mispricing).",
     "This chain does not guarantee a correction. It requires persistence in physical constraints and policy repricing. If disruptions ease quickly and inflation expectations stay anchored, the valuation impact can remain contained even with noisy headlines.",
     "Scenario table (6-18 months) - Bull case: assumptions include easing shipping risk, improving Middle East flow reliability, and no sustained supply outage. Indicators: Brent volatility declines, breakeven inflation remains anchored near recent ranges, and high-yield spreads remain contained. Market implications: broader equity participation, less pressure on duration assets, improved cyclical confidence. Invalidation: renewed physical disruption that reopens sustained inflation pressure.",
     "Scenario table (6-18 months) - Base case: assumptions include intermittent shocks without prolonged disruption of major physical supply. Indicators: repeated commodity spikes that mean-revert, policy communication stays conditional, and credit spreads fluctuate without breakout stress. Market implications: index-level range behavior, persistent sector dispersion, and premium for balance-sheet resilience. Invalidation: either rapid normalization with broad earnings upgrades or a persistent macro deterioration.",
@@ -30,74 +30,59 @@
   ],
   "references": [
     {
-      "title": "Short-Term Energy Outlook, October 2026",
+      "title": "U.S. EIA Short-Term Energy Outlook (Release Date October 6, 2026)",
       "source": "U.S. Energy Information Administration",
       "href": "https://www.eia.gov/outlooks/steo/"
     },
     {
-      "title": "STEO Full Report PDF",
-      "source": "U.S. Energy Information Administration",
-      "href": "https://www.eia.gov/outlooks/steo/pdf/steo_full.pdf"
-    },
-    {
-      "title": "Brent Crude Oil Spot Price (Daily)",
+      "title": "Brent Crude Oil Spot Price (FRED Daily Series)",
       "source": "FRED / U.S. EIA",
       "href": "https://fred.stlouisfed.org/series/DCOILBRENTEU"
     },
     {
-      "title": "10-Year Treasury Constant Maturity Rate",
+      "title": "10-Year Treasury Constant Maturity Rate (FRED DGS10)",
       "source": "FRED / U.S. Treasury",
       "href": "https://fred.stlouisfed.org/series/DGS10"
     },
     {
-      "title": "10-Year Treasury Inflation-Indexed Security, Constant Maturity",
+      "title": "10-Year Treasury Inflation-Indexed Security, Constant Maturity (FRED DFII10)",
       "source": "FRED / Federal Reserve Board",
       "href": "https://fred.stlouisfed.org/series/DFII10"
     },
     {
-      "title": "10-Year Breakeven Inflation Rate",
+      "title": "10-Year Breakeven Inflation Rate (FRED T10YIE)",
       "source": "FRED / Federal Reserve Bank of St. Louis",
       "href": "https://fred.stlouisfed.org/series/T10YIE"
     },
     {
-      "title": "ICE BofA US High Yield Index Option-Adjusted Spread",
+      "title": "ICE BofA US High Yield Index Option-Adjusted Spread (FRED BAMLH0A0HYM2)",
       "source": "FRED / ICE Data Indices",
       "href": "https://fred.stlouisfed.org/series/BAMLH0A0HYM2"
     },
     {
-      "title": "US Dollar to Swiss Franc Spot Exchange Rate",
+      "title": "US Dollar to Swiss Franc Spot Exchange Rate (FRED DEXSZUS)",
       "source": "FRED",
       "href": "https://fred.stlouisfed.org/series/DEXSZUS"
     },
     {
-      "title": "US Dollar to Euro Spot Exchange Rate",
+      "title": "US Dollar to Euro Spot Exchange Rate (FRED DEXUSEU)",
       "source": "FRED",
       "href": "https://fred.stlouisfed.org/series/DEXUSEU"
     },
     {
-      "title": "Long-Term Government Bond Yields: Germany",
+      "title": "Long-Term Government Bond Yields: Germany (FRED IRLTLT01DEM156N)",
       "source": "FRED / OECD",
       "href": "https://fred.stlouisfed.org/series/IRLTLT01DEM156N"
     },
     {
-      "title": "Summary of Economic Projections, September 2026",
+      "title": "Federal Reserve Summary of Economic Projections (September 16, 2026)",
       "source": "Federal Reserve",
       "href": "https://www.federalreserve.gov/monetarypolicy/fomcprojtabl20260916.htm"
     },
     {
-      "title": "FOMC Meeting Calendars and Statements",
-      "source": "Federal Reserve",
-      "href": "https://www.federalreserve.gov/monetarypolicy/fomccalendars.htm"
-    },
-    {
-      "title": "Monetary Policy Assessment of 24 September 2026",
+      "title": "Swiss National Bank Monetary Policy Assessment (September 24, 2026)",
       "source": "Swiss National Bank",
       "href": "https://www.snb.ch/en/publications/communication/press-releases-restricted/pre_20260924"
-    },
-    {
-      "title": "Monetary Policy Statement Portal",
-      "source": "European Central Bank",
-      "href": "https://www.ecb.europa.eu/press/press_conference/monetary-policy-statement/html/index.en.html"
     },
     {
       "title": "China Section 301 Tariff Actions and Exclusion Process",
@@ -105,29 +90,9 @@
       "href": "https://ustr.gov/issue-areas/enforcement/section-301-investigations/tariff-actions"
     },
     {
-      "title": "Export and Re-export Controls Guidance Hub",
+      "title": "BIS Export and Re-export Controls Guidance",
       "source": "Bureau of Industry and Security",
       "href": "https://www.bis.gov/licensing/exports-and-reexports-controls"
-    },
-    {
-      "title": "Global Economic Prospects",
-      "source": "World Bank",
-      "href": "https://www.worldbank.org/en/publication/global-economic-prospects"
-    },
-    {
-      "title": "World Economic Outlook",
-      "source": "International Monetary Fund",
-      "href": "https://www.imf.org/en/Publications/WEO"
-    },
-    {
-      "title": "Global Financial Stability Report",
-      "source": "International Monetary Fund",
-      "href": "https://www.imf.org/en/Publications/GFSR"
-    },
-    {
-      "title": "BIS Annual Economic Report 2026",
-      "source": "Bank for International Settlements",
-      "href": "https://www.bis.org/publications/aer-2026.htm"
     }
   ]
 }

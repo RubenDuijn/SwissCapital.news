@@ -1,7 +1,9 @@
 import type { Metadata } from "next";
 import Link from "next/link";
 import { notFound } from "next/navigation";
+import type { ReactNode } from "react";
 import { ArticleCard } from "@/components/article-card";
+import { ShareActions } from "@/components/share-actions";
 import { getArticleBySlug, getRelatedArticles, latestAnalysis } from "@/lib/content";
 
 type ArticlePageProps = {
@@ -22,10 +24,74 @@ export async function generateMetadata({ params }: ArticlePageProps): Promise<Me
     };
   }
 
+  const canonicalUrl = `https://swisscapital.news/articles/${article.slug}`;
+
   return {
     title: article.title,
     description: article.dek,
+    alternates: {
+      canonical: canonicalUrl,
+    },
+    openGraph: {
+      title: article.title,
+      description: article.dek,
+      type: "article",
+      url: canonicalUrl,
+      siteName: "SwissCapital.news",
+      publishedTime: new Date(article.publishedAt).toISOString(),
+    },
+    twitter: {
+      card: "summary_large_image",
+      title: article.title,
+      description: article.dek,
+    },
   };
+}
+
+function renderParagraphWithLinks(paragraph: string, key: string) {
+  const normalizedParagraph = paragraph
+    .replace(
+      /(^|[\s(])([^\[\]\n][^\]\n]{1,140})\]\((https?:\/\/[^)\s]+|\/[^)\s]+)\)\)?/g,
+      (_, prefix: string, label: string, href: string) => `${prefix}[${label.trim()}](${href})`,
+    )
+    .replace(/\[([^\]]+)\]\((https?:\/\/[^)\s]+|\/[^)\s]+)\)\)/g, "[$1]($2)");
+
+  const markdownLinkRegex = /\[([^\]]+)\]\((https?:\/\/[^)\s]+|\/[^)\s]+)\)/g;
+  const nodes: ReactNode[] = [];
+  let cursor = 0;
+  let match = markdownLinkRegex.exec(normalizedParagraph);
+
+  while (match) {
+    const [fullMatch, label, href] = match;
+    const startIndex = match.index;
+
+    if (startIndex > cursor) {
+      nodes.push(normalizedParagraph.slice(cursor, startIndex));
+    }
+
+    const isExternal = href.startsWith("http://") || href.startsWith("https://");
+
+    nodes.push(
+      isExternal ? (
+        <a key={`${key}-${href}-${startIndex}`} href={href} target="_blank" rel="noreferrer" className="story-link text-ink">
+          {label}
+        </a>
+      ) : (
+        <Link key={`${key}-${href}-${startIndex}`} href={href} className="story-link text-ink">
+          {label}
+        </Link>
+      ),
+    );
+
+    cursor = startIndex + fullMatch.length;
+    match = markdownLinkRegex.exec(normalizedParagraph);
+  }
+
+  if (cursor < normalizedParagraph.length) {
+    nodes.push(normalizedParagraph.slice(cursor));
+  }
+
+  return <p key={key}>{nodes.length > 0 ? nodes : normalizedParagraph}</p>;
 }
 
 export default async function ArticlePage({ params }: ArticlePageProps) {
@@ -37,6 +103,7 @@ export default async function ArticlePage({ params }: ArticlePageProps) {
   }
 
   const relatedArticles = getRelatedArticles(article.slug);
+  const articleUrl = `https://swisscapital.news/articles/${article.slug}`;
 
   return (
     <div className="mx-auto max-w-5xl pb-16 pt-12 md:pt-16">
@@ -60,24 +127,11 @@ export default async function ArticlePage({ params }: ArticlePageProps) {
             This analysis is published under institutional authorship. SwissCapital.news uses desk bylines for research-led essays rather than individual commentator branding.
           </p>
 
-          <div className="mt-6 flex items-center gap-2 text-xs uppercase tracking-[0.14em] text-muted">
-            <span>Share</span>
-            <a href="#" className="rounded-full border border-border px-3 py-1 transition hover:border-ink/40 hover:text-ink">
-              X
-            </a>
-            <a href="#" className="rounded-full border border-border px-3 py-1 transition hover:border-ink/40 hover:text-ink">
-              LinkedIn
-            </a>
-            <a href="#" className="rounded-full border border-border px-3 py-1 transition hover:border-ink/40 hover:text-ink">
-              Copy Link
-            </a>
-          </div>
+          <ShareActions title={article.title} url={articleUrl} />
         </header>
 
         <section className="editorial-prose fade-in-up fade-delay-1 mt-10">
-          {article.body.map((paragraph, index) => (
-            <p key={`${article.slug}-${index}`}>{paragraph}</p>
-          ))}
+          {article.body.map((paragraph, index) => renderParagraphWithLinks(paragraph, `${article.slug}-${index}`))}
 
           <blockquote className="my-10 border-l-2 border-border pl-6 font-serif text-2xl leading-relaxed text-ink md:text-3xl">
             “{article.pullQuote}”
