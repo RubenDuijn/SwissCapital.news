@@ -95,6 +95,39 @@ h4 {
   margin-top: 0;
 }
 
+.article-link {
+  text-decoration-line: underline;
+  text-decoration-thickness: 0.08em;
+  text-decoration-color: color-mix(in srgb, currentColor 70%, transparent);
+  text-underline-offset: 0.16em;
+  border-radius: 0.2rem;
+  padding: 0 0.04em;
+  transition: background-color 180ms ease, text-decoration-color 180ms ease;
+}
+
+.article-link::after {
+  display: none;
+}
+
+.article-link:hover,
+.article-link:focus-visible {
+  background: color-mix(in srgb, var(--ink) 9%, transparent);
+  text-decoration-color: currentColor;
+}
+
+.article-link:focus-visible {
+  outline: 2px solid color-mix(in srgb, var(--ink) 35%, transparent);
+  outline-offset: 2px;
+}
+
+@media (hover: none) and (pointer: coarse) {
+  .article-link {
+    text-decoration-thickness: 0.1em;
+    text-underline-offset: 0.18em;
+    padding: 0.04em 0.1em;
+  }
+}
+
 @keyframes fadeInUp {
   from {
     opacity: 0;

@@ -73,11 +73,11 @@ function renderParagraphWithLinks(paragraph: string, key: string) {
 
     nodes.push(
       isExternal ? (
-        <a key={`${key}-${href}-${startIndex}`} href={href} target="_blank" rel="noreferrer" className="story-link text-ink">
+        <a key={`${key}-${href}-${startIndex}`} href={href} target="_blank" rel="noreferrer" className="story-link article-link text-ink">
           {label}
         </a>
       ) : (
-        <Link key={`${key}-${href}-${startIndex}`} href={href} className="story-link text-ink">
+        <Link key={`${key}-${href}-${startIndex}`} href={href} className="story-link article-link text-ink">
           {label}
         </Link>
       ),
@@ -151,8 +151,8 @@ export default async function ArticlePage({ params }: ArticlePageProps) {
               <ol className="space-y-3 text-sm leading-7 text-muted">
                 {article.references.map((reference, index) => (
                   <li key={reference.href}>
-                    <span className="mr-2 text-ink">[{index + 1}]</span>
-                    <a href={reference.href} target="_blank" rel="noreferrer" className="story-link text-ink">
+                    <span className="mr-2 text-ink">{index + 1}.</span>
+                    <a href={reference.href} target="_blank" rel="noreferrer" className="story-link article-link text-ink">
                       {reference.title}
                     </a>
                     <span className="ml-2">{reference.source}</span>
