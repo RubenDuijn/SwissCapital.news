@@ -49,12 +49,10 @@ export async function generateMetadata({ params }: ArticlePageProps): Promise<Me
 }
 
 function renderParagraphWithLinks(paragraph: string, key: string) {
-  const normalizedParagraph = paragraph
-    .replace(
-      /(^|[\s(])([^\[\]\n][^\]\n]{1,140})\]\((https?:\/\/[^)\s]+|\/[^)\s]+)\)\)?/g,
-      (_, prefix: string, label: string, href: string) => `${prefix}[${label.trim()}](${href})`,
-    )
-    .replace(/\[([^\]]+)\]\((https?:\/\/[^)\s]+|\/[^)\s]+)\)\)/g, "[$1]($2)");
+  const normalizedParagraph = paragraph.replace(
+    /\[([^\]]+)\]\((https?:\/\/[^)\s]+|\/[^)\s]+)\)\)/g,
+    "[$1]($2)",
+  );
 
   const markdownLinkRegex = /\[([^\]]+)\]\((https?:\/\/[^)\s]+|\/[^)\s]+)\)/g;
   const nodes: ReactNode[] = [];
