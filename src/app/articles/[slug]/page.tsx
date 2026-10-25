@@ -147,9 +147,8 @@ export default async function ArticlePage({ params }: ArticlePageProps) {
             </div>
             <div>
               <ol className="space-y-3 text-sm leading-7 text-muted">
-                {article.references.map((reference, index) => (
+                {article.references.map((reference) => (
                   <li key={reference.href}>
-                    <span className="mr-2 text-ink">{index + 1}.</span>
                     <a href={reference.href} target="_blank" rel="noreferrer" className="story-link article-link text-ink">
                       {reference.title}
                     </a>
