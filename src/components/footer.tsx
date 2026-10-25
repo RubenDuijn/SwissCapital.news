@@ -11,7 +11,7 @@ export function Footer() {
           </p>
         </div>
         <div className="space-y-2 text-sm text-muted">
-          <p>Zurich | Geneva | London</p>
+          <p>Independent publication</p>
           <div className="flex items-center gap-4">
             <Link href="/archive" className="story-link">
               Archive
@@ -20,7 +20,7 @@ export function Footer() {
               Editorial Charter
             </Link>
             <Link href="/newsletter" className="story-link">
-              Weekly Briefing
+              Briefing
             </Link>
           </div>
           <p className="text-xs">© {new Date().getFullYear()} SwissCapital.news</p>

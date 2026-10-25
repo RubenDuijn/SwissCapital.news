@@ -1,10 +1,11 @@
 import Link from "next/link";
 import { ArticleCard } from "@/components/article-card";
 import { NewsletterCta } from "@/components/newsletter-cta";
-import { featuredArticle, latestAnalysis, topics } from "@/lib/content";
+import { featuredArticle, latestAnalysis } from "@/lib/content";
 
 export default function Home() {
   const leadStory = featuredArticle;
+  const activeTopics = Array.from(new Set(latestAnalysis.map((article) => article.topic)));
   const currentFocus = latestAnalysis.filter((article) => article.slug !== leadStory.slug).slice(0, 2);
   const foundational = latestAnalysis
     .filter((article) => !currentFocus.some((focus) => focus.slug === article.slug) && article.slug !== leadStory.slug)
@@ -50,7 +51,7 @@ export default function Home() {
 
       <section className="fade-in-up fade-delay-2 grid gap-8 border-b border-border py-12 lg:grid-cols-[1.2fr_0.8fr]">
         <article className="rounded-2xl border border-border bg-panel p-7 md:p-10">
-          <p className="text-xs uppercase tracking-[0.16em] text-muted">Foundational Flagship</p>
+          <p className="text-xs uppercase tracking-[0.16em] text-muted">Featured Analysis</p>
           <h2 className="mt-4 font-serif text-4xl leading-tight text-ink md:text-5xl">
             <Link href={`/articles/${leadStory.slug}`} className="story-link">
               {leadStory.title}
@@ -101,7 +102,7 @@ export default function Home() {
       <section className="border-y border-border py-12">
         <h2 className="text-3xl text-ink md:text-4xl">Topics</h2>
         <div className="mt-6 flex flex-wrap gap-2.5">
-          {topics.map((topic) => (
+          {activeTopics.map((topic) => (
             <span
               key={topic}
               className="rounded-full border border-border bg-panel px-4 py-2 text-xs uppercase tracking-[0.13em] text-muted transition hover:border-ink/40 hover:text-ink"

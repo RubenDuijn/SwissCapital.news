@@ -2,7 +2,7 @@ import type { Metadata } from "next";
 
 export const metadata: Metadata = {
   title: "Newsletter",
-  description: "Subscribe to receive weekly delivery of SwissCapital.news analysis.",
+  description: "Subscribe to receive SwissCapital.news analysis updates.",
 };
 
 export default function NewsletterPage() {
@@ -10,9 +10,9 @@ export default function NewsletterPage() {
     <div className="mx-auto max-w-3xl pb-16 pt-12 md:pt-16">
       <section className="fade-in-up rounded-3xl border border-border bg-panel p-8 md:p-12">
         <p className="text-xs uppercase tracking-[0.16em] text-muted">Newsletter</p>
-        <h1 className="mt-4 text-5xl leading-tight text-ink md:text-6xl">Weekly Intelligence Briefing</h1>
+        <h1 className="mt-4 text-5xl leading-tight text-ink md:text-6xl">Editorial Intelligence Briefing</h1>
         <p className="mt-5 max-w-2xl text-base leading-8 text-muted">
-          The publication in weekly form. One concise distribution note every Saturday with our latest structural analysis.
+          The publication in email form. Concise distribution notes when new structural analysis is published.
         </p>
 
         <form className="mt-8 space-y-4" action="#" method="post">

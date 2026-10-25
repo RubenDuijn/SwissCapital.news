@@ -2,13 +2,12 @@ import fs from "fs";
 import path from "path";
 
 export type Topic =
-  | "Capital"
-  | "AI & Technology"
-  | "Geopolitics"
-  | "Systems"
-  | "Risk"
-  | "Energy"
-  | "Biotechnology";
+  | "Wealth & Capital"
+  | "Markets & Research"
+  | "Technology & AI"
+  | "Luxury & Industrial Brands"
+  | "Infrastructure & Energy"
+  | "The Long View";
 
 export type ArticleFormat = "Signal Brief" | "Analytical Essay" | "Strategic Deep Dive";
 

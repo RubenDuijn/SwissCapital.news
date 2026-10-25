@@ -5,7 +5,7 @@ export function NewsletterCta() {
     <section className="fade-in-up rounded-3xl border border-border bg-panel p-8 md:p-10">
       <p className="text-xs uppercase tracking-[0.16em] text-muted">Distribution</p>
       <h2 className="mt-3 max-w-2xl font-serif text-3xl leading-tight text-ink md:text-4xl">
-        Receive the weekly SwissCapital briefing.
+        Receive SwissCapital editorial briefings.
       </h2>
       <p className="mt-4 max-w-2xl text-base leading-7 text-muted">
         A compact delivery format for readers who want each publication cycle in their inbox.
@@ -15,7 +15,7 @@ export function NewsletterCta() {
           href="/newsletter"
           className="inline-flex items-center rounded-full border border-ink bg-ink px-6 py-2.5 text-sm text-background transition hover:-translate-y-0.5 hover:bg-charcoal"
         >
-          Get Weekly Delivery
+          Get Briefings
         </Link>
         <Link href="/about" className="inline-flex items-center rounded-full border border-border px-6 py-2.5 text-sm text-ink transition hover:border-ink/40">
           Read the Editorial Charter
