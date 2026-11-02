@@ -1,0 +1,61 @@
+{
+  "slug": "policy-regime-strong-growth-sticky-inflation",
+  "title": "Strong Growth, Sticky Inflation, and a Restrictive Policy Regime",
+  "dek": "Recent central-bank communication suggests the policy question is not when to pivot, but how long institutions can hold restrictive settings while growth remains resilient and inflation declines only gradually.",
+  "topic": "Markets & Research",
+  "author": "SwissCapital Research",
+  "authorNote": "Institutional research desk",
+  "publishedAt": "November 1, 2026",
+  "readTime": "15 min read",
+  "format": "Analytical Essay",
+  "imageAlt": "Central bank headquarters and yield curve overlays",
+  "pullQuote": "The operative regime is restrictive patience: institutions are signaling policy durability until inflation confidence is earned rather than inferred.",
+  "body": [
+    "A large share of market pricing still assumes that policy easing is primarily a timing issue. Current official communication argues for a different framework: a restrictive regime can coexist with resilient growth if inflation remains above target and uncertainty remains elevated. In that regime, the cost of premature easing is judged higher than the cost of policy persistence.",
+    "The Federal Reserve's [October 28, 2026 statement](https://www.federalreserve.gov/newsevents/pressreleases/monetary20261028a.htm) maintained the policy range at 3.75%-4.00% by a 10-2 vote and reiterated that inflation remains elevated. The statement also described domestic spending as resilient and capital investment as robust, underscoring that policy restraint is not being treated as incompatible with ongoing expansion.",
+    "This message aligns with the Fed's [September 2026 projection table](https://www.federalreserve.gov/monetarypolicy/fomcprojtabl20260916.htm), which showed median PCE inflation at 3.7% for 2026 and 2.3% for 2027, while the median funds-rate path remained at 4.1% in both 2026 and 2027. The implied policy doctrine is straightforward: disinflation is expected, but not yet sufficient to justify an automatic rate-relief cycle.",
+    "Spine statement one: central banks are not managing toward optimism; they are managing toward credibility. When inflation is above target, credibility preservation becomes a first-order macro asset because it anchors the entire term structure of financing costs.",
+    "The Swiss policy signal is different in level, but similar in posture. In its [September 24, 2026 assessment](https://www.snb.ch/en/publications/communication/press-releases-restricted/pre_20260924), the SNB kept the policy rate at 0% and highlighted inflation pressure linked to oil products alongside uncertainty from geopolitical and trade developments. The institutional message is not that the risk has vanished, but that vigilance is still required under external cost uncertainty.",
+    "For allocators, this US-Swiss comparison is useful because it separates policy level from policy intent. The Fed and SNB are operating at different nominal-rate settings, yet both communication sets stress uncertainty management and inflation discipline. That commonality matters for cross-border duration exposure, FX assumptions, and discount-rate sensitivity in globally held equities.",
+    "Credit markets also remain an important confirmation layer. Elevated policy persistence typically interacts with credit spreads and refinancing behavior before it appears in headline growth data. If policy remains restrictive while nominal growth moderates, spread behavior can become an earlier warning signal than GDP prints for risk-asset repricing.",
+    "Spine statement two: the macro risk is less about immediate recession and more about a prolonged valuation filter. In a restrictive-patience regime, assets must repeatedly justify expected cash flows against a higher real-rate benchmark.",
+    "This has direct implications for equity style behavior. Businesses with durable operating cash generation, lower refinancing dependency, and pricing power can tolerate policy duration more effectively than balance sheets that depend on cheap forward financing to support current valuation. The distinction is structural and should not be reduced to short-term factor rotations.",
+    "Energy remains a critical transmission variable inside this policy framework. The [EIA STEO](https://www.eia.gov/outlooks/steo/) release in October maintained elevated late-2026 oil assumptions relative to 2027. Even if medium-term assumptions moderate, the near-term path can still feed inflation expectations and delay policy normalization confidence.",
+    "The practical implication is to reframe the policy debate around conditionality rather than calendar timing. A durable easing phase likely requires simultaneous evidence of disinflation progress, stable expectations, and manageable external-cost shocks. Absent that package, policy can remain restrictive longer than consensus expects without violating growth resilience in the near term.",
+    "Spine statement three: restrictive patience is now a capital-allocation regime, not a temporary communication tactic. The burden of proof has shifted to future cash-flow certainty, and that shift is likely to persist until inflation confidence is institutionally secured.",
+    "For SwissCapital's allocation lens, the key monitor set is explicit: inflation trajectory against target, real-rate stability, credit-spread drift, and policy communication asymmetry between official statements and market-implied paths. The greater the divergence, the higher the probability of repricing episodes across duration-sensitive assets.",
+    "This article's thesis would weaken under two conditions: first, if inflation converges faster than projected while growth remains intact, enabling a measured easing path without credibility loss; second, if external energy and trade shocks fade enough to lower risk premia materially. Until then, the evidence supports a policy regime where restraint is an intentional strategy rather than an accidental lag."
+  ],
+  "references": [
+    {
+      "title": "Federal Reserve Issues FOMC Statement (Oct 28, 2026)",
+      "source": "Federal Reserve",
+      "href": "https://www.federalreserve.gov/newsevents/pressreleases/monetary20261028a.htm"
+    },
+    {
+      "title": "Summary of Economic Projections (Sep 16, 2026)",
+      "source": "Federal Reserve",
+      "href": "https://www.federalreserve.gov/monetarypolicy/fomcprojtabl20260916.htm"
+    },
+    {
+      "title": "SNB Monetary Policy Assessment (Sep 24, 2026)",
+      "source": "Swiss National Bank",
+      "href": "https://www.snb.ch/en/publications/communication/press-releases-restricted/pre_20260924"
+    },
+    {
+      "title": "U.S. EIA Short-Term Energy Outlook",
+      "source": "U.S. Energy Information Administration",
+      "href": "https://www.eia.gov/outlooks/steo/"
+    },
+    {
+      "title": "10-Year Treasury Constant Maturity Rate (DGS10)",
+      "source": "FRED / U.S. Treasury",
+      "href": "https://fred.stlouisfed.org/series/DGS10"
+    },
+    {
+      "title": "10-Year Treasury Inflation-Indexed Rate (DFII10)",
+      "source": "FRED / Federal Reserve Board",
+      "href": "https://fred.stlouisfed.org/series/DFII10"
+    }
+  ]
+}
