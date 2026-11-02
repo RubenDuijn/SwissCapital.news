@@ -64,7 +64,7 @@ export default function AboutPage() {
           <p className="text-xs uppercase tracking-[0.16em] text-muted">Scope</p>
           <h2 className="mt-3 text-3xl text-ink">What We Cover</h2>
           <p className="mt-4 text-sm leading-7 text-muted">
-            Capital concentration, industrial policy, strategic infrastructure, energy systems, geopolitical fragmentation, institutional trust, biotechnology risk, and the financial architecture beneath technological change.
+            Wealth and capital allocation, market structure, AI and technological systems, luxury and industrial competitiveness, infrastructure and energy constraints, and long-horizon strategic themes.
           </p>
         </article>
       </section>

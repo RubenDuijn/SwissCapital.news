@@ -103,12 +103,13 @@ export default function Home() {
         <h2 className="text-3xl text-ink md:text-4xl">Topics</h2>
         <div className="mt-6 flex flex-wrap gap-2.5">
           {activeTopics.map((topic) => (
-            <span
+            <Link
               key={topic}
+              href={`/archive?topic=${encodeURIComponent(topic)}`}
               className="rounded-full border border-border bg-panel px-4 py-2 text-xs uppercase tracking-[0.13em] text-muted transition hover:border-ink/40 hover:text-ink"
             >
               {topic}
-            </span>
+            </Link>
           ))}
         </div>
       </section>

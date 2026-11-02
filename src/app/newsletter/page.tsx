@@ -46,14 +46,17 @@ export default function NewsletterPage() {
           </select>
 
           <button
-            type="submit"
+            type="button"
+            aria-disabled="true"
             className="inline-flex items-center rounded-full border border-ink bg-ink px-6 py-2.5 text-sm text-background transition hover:-translate-y-0.5 hover:bg-charcoal"
           >
-            Subscribe
+            Registration Opening Soon
           </button>
         </form>
 
-        <p className="mt-6 text-xs leading-6 text-muted">No promotional noise. No trend chasing. Unsubscribe anytime.</p>
+        <p className="mt-6 text-xs leading-6 text-muted">
+          Briefing registration is being prepared. No promotional noise. No trend chasing.
+        </p>
       </section>
     </div>
   );
