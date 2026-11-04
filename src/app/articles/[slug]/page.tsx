@@ -10,6 +10,11 @@ type ArticlePageProps = {
   params: Promise<{ slug: string }>;
 };
 
+type ScenarioTable = {
+  headers: [string, string, string, string];
+  rows: Array<[string, string, string, string]>;
+};
+
 export async function generateStaticParams() {
   return latestAnalysis.map((article) => ({ slug: article.slug }));
 }
@@ -49,6 +54,36 @@ export async function generateMetadata({ params }: ArticlePageProps): Promise<Me
 }
 
 function renderParagraphWithLinks(paragraph: string, key: string) {
+  const scenarioTable = parseScenarioTable(paragraph);
+  if (scenarioTable) {
+    return (
+      <div key={key} className="my-8 overflow-x-auto rounded-md border border-border/70">
+        <table className="min-w-full border-collapse text-left text-sm leading-7 text-muted">
+          <thead className="bg-border/20 text-xs uppercase tracking-[0.12em] text-ink">
+            <tr>
+              {scenarioTable.headers.map((header) => (
+                <th key={`${key}-${header}`} className="px-4 py-3 font-medium">
+                  {header}
+                </th>
+              ))}
+            </tr>
+          </thead>
+          <tbody>
+            {scenarioTable.rows.map((row, rowIndex) => (
+              <tr key={`${key}-row-${rowIndex}`} className="border-t border-border/60 align-top">
+                {row.map((cell, cellIndex) => (
+                  <td key={`${key}-row-${rowIndex}-cell-${cellIndex}`} className="px-4 py-3">
+                    {cell}
+                  </td>
+                ))}
+              </tr>
+            ))}
+          </tbody>
+        </table>
+      </div>
+    );
+  }
+
   const normalizedParagraph = paragraph.replace(
     /\[([^\]]+)\]\((https?:\/\/[^)\s]+|\/[^)\s]+)\)\)/g,
     "[$1]($2)",
@@ -90,6 +125,40 @@ function renderParagraphWithLinks(paragraph: string, key: string) {
   }
 
   return <p key={key}>{nodes.length > 0 ? nodes : normalizedParagraph}</p>;
+}
+
+function parseScenarioTable(paragraph: string): ScenarioTable | null {
+  const lines = paragraph
+    .split("\n")
+    .map((line) => line.trim())
+    .filter(Boolean);
+
+  if (lines.length < 5 || lines[0] !== "[[SCENARIO_TABLE]]") {
+    return null;
+  }
+
+  const headerColumns = lines[1].split("|").map((column) => column.trim());
+  if (headerColumns.length !== 4) {
+    return null;
+  }
+
+  const rows: Array<[string, string, string, string]> = [];
+  for (const line of lines.slice(2)) {
+    const columns = line.split("|").map((column) => column.trim());
+    if (columns.length !== 4) {
+      return null;
+    }
+    rows.push(columns as [string, string, string, string]);
+  }
+
+  if (rows.length < 3) {
+    return null;
+  }
+
+  return {
+    headers: headerColumns as [string, string, string, string],
+    rows,
+  };
 }
 
 export default async function ArticlePage({ params }: ArticlePageProps) {
